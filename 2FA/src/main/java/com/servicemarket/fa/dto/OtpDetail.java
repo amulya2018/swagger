@@ -12,15 +12,10 @@ public class OtpDetail {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@ApiModelProperty(notes = "id for OTP ")
 	Integer otpid;
-	@ApiModelProperty(notes = "generated otp")
 	String otpGen;
-	@ApiModelProperty(notes = "name of the customer")
 	String name;
-	@ApiModelProperty(notes = "password of the customer")
 	String password;
-	@ApiModelProperty(notes = "email of the customer")
 	String email;
 	long timestamp;
 	
