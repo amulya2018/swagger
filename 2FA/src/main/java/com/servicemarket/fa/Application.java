@@ -32,8 +32,8 @@ public class Application {
 	Docket configureSwagger(){
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.paths(PathSelectors.ant("/fa/auth/**"))
-				.apis(RequestHandlerSelectors.basePackage("com.servicemarket.profile"))
+				.paths(PathSelectors.ant("/fa/**"))
+				.apis(RequestHandlerSelectors.basePackage("com.servicemarket.fa"))
 				.build()
 				.apiInfo(new ApiInfo("Profile's API",
 						"Our Service market API",
